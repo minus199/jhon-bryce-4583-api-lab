@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Dictioary</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body onload="populateLangs();">
+    <div id="app">
+        <div id="dictionary">
+            <div id="toolbar">
+                <input id="lookup-field" type="text" placeholder="Lookup any word..." />
+                <select name="Languages" id="supported-langs"></select>
+                <button id="search">Search</button>
+            </div>
+
+            <div id="dict-container"></div>
+        </div>
+    </div>
+
+    <script type="application/javascript" src="main.js"></script>
+</body>
+
+</html>
