@@ -50,7 +50,7 @@ app.get('/api/v2/langs', function (req, res, next) {
 
         fetch(`${baseURL}/${langCode}/${searchTerm}`)
             .then(dictRes => dictRes.json())
-            .then(payload => res.json(payload))
+            .then(payload => setTimeout(() => res.json(payload), parseInt(Math.random() * 5000))) // simulate a slow connection
 
     })
 }
